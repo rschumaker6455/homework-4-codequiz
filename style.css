@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 800px;
+    max-width: 80%;
+    background-color: beige;
+    border-radius: 5px;
+    border: 2px gray solid;
+    box-shadow: 0 0 15px 1px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid grey;
+    background-color:lavenderblush;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn:hover {
+    border: 3px solid purple;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
