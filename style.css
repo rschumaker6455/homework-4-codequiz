@@ -56,6 +56,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    margin-bottom: 50px;
 }
 
 .controls {
@@ -67,4 +68,16 @@ body {
 #question {
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.response {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px gray solid;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
 }

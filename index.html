@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script defer src="script.js"></script>
-    <script defer src="questions.js"></script>
+    
     <title>Code Quiz</title>
 </head>
 <body>
@@ -15,7 +14,7 @@
             <div class="col-md-6">High Scores</div>
             <div class="col-md-6">Timer</div>
         </div>
-        <div id="question-conainer" class="hide">
+        <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
                 <button class="btn">Answer 1</button>
@@ -28,8 +27,10 @@
             <button id="start-btn" class="start-btn btn">Start</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
+        <div id="correct" class="response">Correct!</div>
+        <div id="wrong" class="response">Wrong!</div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
