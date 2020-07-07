@@ -1,3 +1,4 @@
+//This is code for displaying and giving results to the questions
 var startButton = document.getElementById('start-btn')
 var nextButton = document.getElementById('next-btn')
 var questionContainerElement = document.getElementById('question-container')
@@ -6,6 +7,8 @@ var answerButtonsElement = document.getElementById('answer-buttons')
 var correctAnswer = document.querySelector('.correct')
 var wrong = document.querySelector('.wrong')
 var done = document.querySelector('.done')
+
+var countRightAnswers = 0
 
 var shuffledQuestions, currentQuestionIndex
 
@@ -21,7 +24,9 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
+    countRightAnswers = 0
     setNextQuestion()
+    setTime()
 }
 
 function setNextQuestion() {
@@ -59,12 +64,18 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex +1) {
       nextButton.classList.remove('hide')
     } else {
-      done.classList.remove('hide')
+      
+      window.location.href(end.html)
     }
+    if (selectedButton.dataset = correct) {
+      countRightAnswers++;
+   }
+   document.getElementById('score-count').innerHTML = countRightAnswers
+   localStorage.setItem('countRightAnswers', JSON.stringify(countRightAnswers))
 }
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+  clearStatusClass(element)
     if (correct) {
         correctAnswer.classList.remove('hide')
     } else {
@@ -116,4 +127,10 @@ var questions = [
     },
   ];
 
-  localStorage.setItem('questions', JSON.stringify(questions))
+
+
+
+
+
+
+

@@ -11,8 +11,8 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">High Scores</div>
-            <div class="col-md-6">Timer</div>
+            <div class="col-md-6">View High Scores</div>
+            <div class="col-md-6 time">Timer:</div>
         </div>
         <div id="question-container" class="hide">
             <div id="question">Question</div>
@@ -24,14 +24,19 @@
             </div>
         </div>
         <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="start-btn" class="start-btn btn">Start Quiz</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
 
         <div class="correct hide">Correct!</div>
         <div class="wrong hide">Wrong!</div>
-        <div class="done hide">All Done!</div>
+        
+
+        <div class="high-scores hide">
+            <p>Final Score: <span id="score-count"></span></p>
+        </div>
     </div>
+
 
     <script src="questions.js"></script>
     <script src="script.js"></script>

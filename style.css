@@ -27,7 +27,7 @@ body {
     padding-right: 10px;
     width: 800px;
     max-width: 80%;
-    height: 50%;
+    height: 60%;
     background-color: white;
     border-radius: 5px;
     border: 2px gray solid;
@@ -48,6 +48,8 @@ body {
     padding: 5px 10px;
     outline: none;
     font-size: 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -92,16 +94,56 @@ body {
     font-size: 1.5rem;
     
 }
+
+
 .done {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px green solid;
     font-weight: bold;
     color: green;
     font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+#end {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .hide {
     display: none;
+}
+
+/*Forms*/
+
+form {
+    width: 100%;
+}
+
+input {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 10rem;
+    padding: 6px;
+    border: 1px solid grey;
+    background-color:lavenderblush;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+.finalscore {
+    
 }
