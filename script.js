@@ -1,6 +1,6 @@
 //Count down timer
 var timeEl = document.querySelector(".time")
-var secondsLeft = 60
+var secondsLeft = 45
 
 function setTime() {
   var timerInterval = setInterval(function() {
@@ -17,6 +17,7 @@ function setTime() {
 
 function sendMessage() {
   timeEl.textContent = "Times up!"
+  window.location.href='end.html'
 }
 
 

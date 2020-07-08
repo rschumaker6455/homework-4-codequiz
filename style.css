@@ -32,6 +32,7 @@ body {
     border-radius: 5px;
     border: 2px gray solid;
     box-shadow: 0 0 15px 1px;
+    text-decoration: none;
 }
 
 .btn-grid {
@@ -144,6 +145,20 @@ input::placeholder {
     font-size: 1rem;
 }
 
-.finalscore {
-    
+/*High Score*/
+
+#highScoresList {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 1.5rem;
+    margin-bottom: 0.5;
 }

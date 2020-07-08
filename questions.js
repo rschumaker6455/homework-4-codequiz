@@ -64,8 +64,7 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex +1) {
       nextButton.classList.remove('hide')
     } else {
-      
-      window.location.href(end.html)
+      window.location.href='end.html'
     }
     if (selectedButton.dataset = correct) {
       countRightAnswers++;
