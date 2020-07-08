@@ -11,9 +11,20 @@ function setTime() {
       clearInterval(timerInterval)
       sendMessage()
     }
-
   }, 1000);
 }
+
+function wrongAnswer() {
+  var timerInterval = setInterval(function() {
+    secondsLeft--
+  
+    if (selectedButton.dataset = false) {
+    secondsLeft--
+    }
+  }, 5000)
+
+}
+
 
 function sendMessage() {
   timeEl.textContent = "Times up!"
