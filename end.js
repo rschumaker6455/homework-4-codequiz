@@ -25,7 +25,11 @@ saveHighScore = e => {
     highScores.push(score)
     console.log(highScores)
 
+    var scoreDisplay = Object.values(score)
+
     localStorage.setItem('highScores', JSON.stringify(highScores))
+    localStorage.setItem('score', JSON.stringify(score))
+    document.getElementById('highScoresList').innerHTML = scoreDisplay
 }
 
 //High Scores
@@ -37,6 +41,7 @@ var highScores = JSON.parse(localStorage.getItem('highScores')) || []
 clearHighScore = e => {
     e.preventDefault()
     window.localStorage.clear(highScores)
+    document.getElementById('highScoresList').textContent = '' 
 }
 
 highScoresList.innerHTML = highScores
